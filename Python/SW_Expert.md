@@ -58,3 +58,9 @@ for test_case in range(1, 11):
 
     print("#{cnt} {max}".format(cnt = n, max = max(arr_sum)))
 ```
+
+** join 함수 -> 배열을 연달아서 보여주는 함수
+
+SWEA #1226 미로1 문제 - DFS / BFS 
+참고: https://mungto.tistory.com/235 
+
