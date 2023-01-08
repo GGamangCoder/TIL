@@ -12,6 +12,7 @@ Counter.most_common()
 // 2차원 배열 입력받기;     arr = [list(map(int, input().split())) for _ in range(100)]
 **** 2차원 배열에서 가로 배열(행) 입력 받기: arr_rows = arr
 **** 2차원 배열에서 세로 배열(열) 입력 받기: arr_cols = [[arr[i][j] for i in range(100)] for j in range(100)]
+    arr_cols = list(map(list, zip(*arr)))   //얘도 바꿔줌
 
 ** 2차원 배열에서 한 열의 합: sum_arr.append(sum([j[i] for j in arr]))
 
