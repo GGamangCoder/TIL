@@ -35,4 +35,25 @@ for test_case in range(1, 11):
     sum_arr.append(sum(arr_1))
     sum_arr.append(sum(arr_2))
     print("#{cnt} {max}".format(cnt = n, max = max(sum_arr)))
+```   
+
+```py
+# 1209 조금 다른 방식
+
+for test_case in range(1, 11):
+    n = int(input())
+    arr = [list(map(int, input().split())) for _ in range(100)]
+    arr_rows = arr
+    arr_cols = [[arr[i][j] for i in range(100)] for j in range(100)]
+    arr_cross1 = [arr[i][i] for i in range(100)]
+    arr_cross2 = [arr[i][99-i] for i in range(100)]
+    arr_sum = []
+
+    for i in range(100):
+        arr_sum.append(sum(arr_rows[i]))
+        arr_sum.append(sum(arr_cols[i]))
+    arr_sum.append(sum(arr_cross1))
+    arr_sum.append(sum(arr_cross2))
+
+    print("#{cnt} {max}".format(cnt = n, max = max(arr_sum)))
 ```
