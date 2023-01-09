@@ -1,6 +1,7 @@
 출처: http://www.tcpschool.com/c/intro 
 
-## C 언어
+# "C 언어" 를 공부하며 ..
+> SSAFY 9기 화이팅!!@
 ### 1. C 언어 시작
 ### 2. 타입
 ### 3. 연산자
