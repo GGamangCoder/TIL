@@ -60,6 +60,7 @@ for test_case in range(1, 11):
 ```
 
 ** join 함수 -> 배열을 연달아서 보여주는 함수
+** zip 함수 -> 배열 불러오기 처리 (zip *)
 
 SWEA #1226 미로1 문제 - DFS / BFS 
 참고: https://mungto.tistory.com/235 
