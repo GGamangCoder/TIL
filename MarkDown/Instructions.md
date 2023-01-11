@@ -1,8 +1,8 @@
 ## 마크다운(MarkDown) 문법 사용 메뉴얼
 
 참고(출처): https://heropy.blog/2017/09/30/markdown/
+<br/>  
 
-#### 23.01.11.수 SSAFY
 ## 마크다운(markdown)
 - 텍스트 기반의 가벼운 마크업(markup) 언어  
                     : 태그를 사용하여 문서의 구조를 나타내는 것
