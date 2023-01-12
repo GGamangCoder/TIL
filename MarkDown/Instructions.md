@@ -12,9 +12,9 @@
 ## 링크 삽입  
 ```md
 [이름](url)
-예시 - [구글](https://google.co.kr)
+예시 - [구글](https://google.com)
 ```
-> [구글](https://google.co.kr)
+> [구글](https://google.com)
 
 ## 이미지 삽입
 
