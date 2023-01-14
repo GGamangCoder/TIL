@@ -86,7 +86,7 @@ print("Hello!")
 여기서 width 와 height 는 크기(기본 px)를 조절하며 *`<p align="center"><img src url></p>`* 기능으로 중앙 정렬이 가능하다.  
 <br/>
 
-<p align="center"><img src='https://user-images.githubusercontent.com/94775103/211955363-0325363f-1e24-4b58-8f5d-65092f81b37c.png' width="400" height="400"></p>
+<p align="center"><img src='https://user-images.githubusercontent.com/94775103/211955363-0325363f-1e24-4b58-8f5d-65092f81b37c.png' width="300" height="300"></p>
 
 
 
