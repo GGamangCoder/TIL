@@ -1,5 +1,5 @@
 # DFS(깊이 우선 탐색, Depth-First Search)
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" height="300px" width="300px"></p>
+<p align="center"><img src='https://user-images.githubusercontent.com/94775103/212637956-5b8112fa-d99c-41db-a89a-32c3a2b7d927.gif' height="300px" width="300px"></p>
 
 * **개념**  
 : 시작 노드에서 시작해서 다음 분기(branch)로 넘어가기 전에 **해당 분기를 완벽히 탐색 후** 다른 분기로 넘어가는 방식.  
@@ -35,7 +35,7 @@ def bfs(x, y):
 
 
 # BFS(너비 우선 탐색, Breath-First Search)
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" height="300px" width="300px"></p>
+<p align="center"><img src='https://user-images.githubusercontent.com/94775103/212638046-513db143-36d0-43b0-887e-8679fe4debe5.gif' height="300px" width="300px"></p>
 
 * **개념**  
 : DFS와는 다르게 깊이가 아닌 넓이를 우선시 하여 탐색한다. 첫 시작 노드에서 연결된 노드를 다음 타겟으로 정하면서 진행된다.
