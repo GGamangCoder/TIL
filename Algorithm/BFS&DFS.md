@@ -15,22 +15,30 @@
     - 얻어진 해가 최단 경로가 된다는 보장이 없다. 이는 목표에 이르는 경로가 다수인 문제에 대해 깊이우선 탐색은 해에 다다르면 탐색을 끝내버리므로, 이때 얻어진 해는 최적이 아닐 수 있다는 의미이다.   
 
 ## 소스 코드
+### 2차원 배열 - Stack
+
 ```py
-def bfs(x, y):
+def dfs(x, y):
     dx = [0, 0, 1, -1]
     dy = [1, -1, 0, 0]
-    queue = [(x,y)]
+    stack, temp = [(x, y)], []
     arr[x][y] = 0
+    j = 0
 
-    while queue:
-        x, y = queue.pop(0)
-        for i in range(4):
-            nx, ny = x+dx[i], y+dy[i]
-
-            if (0 <= nx < N) and (0 <= ny < M):
-                if arr[nx][ny] == 1:
-                    queue.append((nx, ny))
-                    arr[nx][ny] = 0
+    while (stack or temp):
+        if stack != []:
+            x, y = stack.pop(-1)
+            for i in range(4):
+                nx, ny = x+dx[i], y+dy[i]
+                if (0 <= nx < N) and (0 <= ny < M):
+                    if arr[nx][ny] == 1:
+                        stack.append((nx, ny))
+                        temp.append((x, y))
+                        arr[nx][ny] = 0
+                        break
+        elif temp != []:
+            x, y= temp.pop(-1)
+            stack.append((x, y))
 ```
 
 
@@ -48,18 +56,22 @@ def bfs(x, y):
     - 무한 그래프(infinite graph)의 경우에는 결코 해를 찾지도 못하고, 끝내지도 못한다.
 
 ## 소스 코드
+### 2차원 배열 - Queue
+
 ```py
-def dfs(graph, start_node):
-  visit = list()
-  stack = list()
-  
-  stack.append(start_node)
-  
-  while stack:
-    node = stack.pop(0)
-    if node not in visit:
-      visit.append(node)
-      stack.extend(graph[node])
-      
-  return visit
+def bfs(x, y):
+    dx = [0, 0, 1, -1]
+    dy = [1, -1, 0, 0]
+    queue = [(x,y)]
+    arr[x][y] = 0
+
+    while queue:
+        x, y = queue.pop(0)
+        for i in range(4):
+            nx, ny = x+dx[i], y+dy[i]
+
+            if (0 <= nx < N) and (0 <= ny < M):
+                if arr[nx][ny] == 1:
+                    queue.append((nx, ny))
+                    arr[nx][ny] = 0
 ```
