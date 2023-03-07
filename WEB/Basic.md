@@ -20,7 +20,24 @@ cf) 주석; ```<!-- 내용 -->```
 - form, input, label(선택할 수 있는 영역 늘어남)
 - input & label 상호 연관; input 에는 id 속성, label에는 for 속성을 활용, **일치**시켜야 함!!!
 
-## CSS  
+
+
+## CSS: Cascading Style Sheets, 스타일 지정하기 위한 언어  
+- 선택자(Selector)
+- 선언(Declaration)
+- 속성(Property)
+- 값(value)
+  
+- 전체 선택자(*), 요소 선택자(tag), 클래스 선택자(.), 아이디 선택자(#)  
+  
+* ul, li  
+
+- 중요도(!important) **** 제일 먼저,
+- 우선순위(중요도 > 인라인 - id - class, 속성 - 요소)
+
+- 상속: **속성 중에 상속이 되는 것이 있고 되지 않는 것들이 있다!!**
+- 자식, 자손;   ```.box > p```  / ```.box p``` (꺾새 ' > ' 표시 or 빈칸 ' ')
+
 
 ## JS(JavaScript)  
 
