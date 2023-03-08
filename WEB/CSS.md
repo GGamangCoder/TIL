@@ -9,6 +9,7 @@
   - Padding; 테두리 안쪽 내부 여백 요소에 적용된 배경색, 이미지 포함
   - Border; 테두리 영역
   - Margin; 테두리 바깥 외부 여백
+    - cf) margin collapse - not working(top - bottom)
   - 순서 - 상/우-좌/하 (+, %, ccw), shorthand 존재
 
 <br/>
