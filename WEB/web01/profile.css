@@ -1,0 +1,23 @@
+img {
+    width: 200px;
+
+    display: block;
+    margin: auto;
+}
+
+.context {
+    font-size: large;
+    font-style: oblique;
+
+    text-align: center;
+}
+
+#name {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#job > span {
+    color: royalblue;
+    font-weight: bold;
+}
