@@ -1,6 +1,6 @@
 ## CSS Layout 잡아주기  
 
-- Recap / 다른 표현 뭐 있었던거 같은데
+- Last Time(CSS properties)
   - Box model
   - Normal flow?
 
