@@ -29,5 +29,5 @@
 - 정렬; align-items(모든 아이템, cross axis 기준) / align-self(개별 아이템)
   1. align-items; **모든** 아이템 cross axis 기준 = stretch, flex-start, flex-end, center, baseline
   2. align-self; **개별** 아이템 위와 동일
-- 기타 속성; flex-grow, order
-
+- 기타 속성; flex-grow, order  
+ cf) align에 대하여 content / items 차이는 content는 전체에 대해서, items는 각각의 아이템을 정렬해주는 차이가 있다.
