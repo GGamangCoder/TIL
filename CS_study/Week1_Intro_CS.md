@@ -1,5 +1,7 @@
 # Introduction to Computer Science  
-출처) 
+출처) https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/  
+
+<br/>
 
 ### [Lecture. 1] What is computation?
 
@@ -57,3 +59,5 @@ N = 2^k
 * Functions: maker & user
   - call, scope(LEGB), parameter, name, environment
   - use for multiple times to do
+
+---
