@@ -61,3 +61,109 @@ N = 2^k
   - use for multiple times to do
 
 ---
+
+### [Lecture. 5] Tuples, Lists, Aliasing, Mutability, Cloning  
+
+Tuple - immutable, inside anything  
+List = indices and ordering, "Mutable!"(can change value), iterable  
+<-> string(join method) // can cast type, vice versa  
+
+list method  
+- append(add) / + is combine between two lists  
+- remove; specific index / pop; end of list  
+- join  
+- sort(mutates the list, returns nothing), sorted(does not mutate, return), reverse  
+cf) '.'= operation,  
+<br/>
+
+- objects; lists assign same object,  
+list of list of ... ; can have nested, side effects still possible after mutation  
+avoid mutating a list as u are iterating over it  
+[list]  
+- **mutable**(e.g. copy)  
+- is an **object** in **memory**  
+- variable name points to object  
+** **Mutation, Aliasing, Cloning ****
+
+
+---
+
+### [Lecture. 6] Recursion and Dictionaries  
+
+- Recursion) **divide** and conquer / **decrease** and conquer  
+- Dictionaries) mutable object type  
+
+- Recursion  
+  - Algorithmically(iterative, state variavles) & Semantically(function calls itself)
+  - cans solve directly and simple = computation
+  - own scope & environment, using the same variable names but **different objects in separate scopes**, flow of ctrl passes **back to previous scope**
+  - but avoid infinite condition, bounded, needed base case
+  - its can be very straightforward, just unwind it simple and the code follows exactly that.  
+
+```python
+# Towers of Hanoi
+
+def printMove(fr, to):
+  print(‘move from’ + str(fr) + ‘to’ + str(to))
+
+def Towers(n, fr, to, spare):
+    if n == 1:
+        printMove(fr, to)
+else:
+    Towers(n-1, fr, spare, to)
+    Towers(1, fr, to, spare)
+    Towers(n-1, spare, to, fr)
+```
+
+e.g.) Fibonacci numbers  
+e.g.) Palindrome  
+
+- Dictionaries; a better and cleaner way(than list or etc.)
+  - store pairs of data(key & value)
+  - add, test(search), delete, get an iterable like a tuple of all keys/vals
+  - values(immutable and mutable, duplicates) vs keys(unique, immutable, no order)
+  - dic can be used like dp for fibonacci(like memoization)  
+
+---
+
+### [Lecture. 7] Testing, Debugging, Exceptions, and Assertions
+
+- defensive programming; Testing/Validation & debugging  
+  - specifications for functions, modularize,  
+
+- * Unit testing - testing each function one by one.  
+- Regression - catch reintroduced  
+- Integration - overall program  
+
+- black box testing -  
+- glass box testing – path-complete / drawback; branchesm, for loops, while loops
+- Debugging – built in / Tutor / print statement / systematic in my hunt, use brain
+
+![Tips](https://user-images.githubusercontent.com/94775103/223929475-395f0646-a61c-4092-b68d-d594b9208fb9.png)
+
+- Error types
+  - SyntaxError / NameError / AttributeError / TypeError / ValueError / IOError
+  - Python code can provide **handlers** for exceptions => try:, except:, finally:
+
+- Assertion
+  - want to be sure that assumptions expected, is an example of good defensive programming
+  - use for execution halts / check inputs&outputs; types, invariants, constraints, violations
+
+---
+
+### [Lecture. 8] Object Oriented Programming(OOP)
+
+- Objects
+  - type, data representation, a set of procedures for interaction with the object
+  - data abstraction; an internal representation(private) / an interface
+
+- Advantages of OOPs
+  - bundle data into **packages**
+  - divide-and-conquer
+  - **classes** make it easy to **reuse** code
+  - **creating a class**(define, **inherits,** data and procedures that **belong** to – data attributes & methods) and **using an instance**
+  - special operators(double underscore; e.g. __add__, dot notation(‘.’ operator) to access data)
+
+---
+
+
