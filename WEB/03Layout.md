@@ -13,5 +13,21 @@
 
 ### Flexbox  
 [등장 배경]  
-: Normal Flow 적용 안되는 경우; (Float / Position)수직 정렬, 너비나 높이 혹은 간격을 동일하게 배치할 경우
+: Normal Flow 적용 안되는 경우; (Float / Position)수직 정렬, 너비나 높이 혹은 간격을 동일하게 배치할 경우  
+
+- CSS Flexible Box Layout; 행과 열 형태로 아이템들을 배치하는 1차원 레이아웃 모델
+- 축; 메인 축 & 교차(직교) 축 - 쌓이는 방향에 따라
+- 구성 요소; 부모 요소(Container) & 자식 요소(Item)
+
+#### Flex 속성
+- 배치 설정; flex-direction / flex-wrap &nbsp;&nbsp;&nbsp;&nbsp; - 두 가지 shorthand 작성 가능
+  1. flex-direction; row(default), row-reverse, column, column-reverse
+  2. flex-wrap; 줄 바꿈 - 공간 넘어갈 경우 새로운 라인에서 배치(컨테이너 영역 內)
+- 공간 분할; justify-content(main) / align-content(cross)
+  1. justify-content; Main axis 기준 공간 배분 = flex-start, flex-end, center, space-between, space-around, space-evenly
+  2. align-content; Cross axis 기준 공간 배분 = (위와 동일)
+- 정렬; align-items(모든 아이템, cross axis 기준) / align-self(개별 아이템)
+  1. align-items; **모든** 아이템 cross axis 기준 = stretch, flex-start, flex-end, center, baseline
+  2. align-self; **개별** 아이템 위와 동일
+- 기타 속성; flex-grow, order
 
