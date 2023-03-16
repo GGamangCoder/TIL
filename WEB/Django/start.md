@@ -56,8 +56,9 @@ cf) 프로젝트 새로 시작할 경우 해야할 일
 - git 세팅(git init / touch .gitignore)
 - 가상환경에 필요한 패키지(라이브러리 설치)
     - source venv/Scripts/activate  (타 os의 경우 scripts가 아닌 bin 폴더)
-    - pip install ~
+    - pip install django==3.2.18
     - pip freeze > requirements.txt
+    - 끌어올 때는 pip install -r requirements.txt
 - django 의 경우; django-admin startproject (프로젝트몀) (타겟)
 - python -m startapp myapp
 
