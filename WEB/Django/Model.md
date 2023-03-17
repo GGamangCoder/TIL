@@ -1,5 +1,26 @@
+# Django: 서버 구현 웹 프레임워크  
+> Framework: 코드의 재사용, 서비스 개발에 필요한 기능들을 미리 구현해서 모아놓은 것  
 
+### 클라이언트와 서버 구조
+* 클라이언트(user)
+    - 사용자의 인터넷에 연결된 장치(pc 혹은 모바일 등)
+    - 웹 브라우저
+    - 서비스 요청(request)하는 주체
+* 서버(server)
+    - 페이지, 사이트 또는 앱을 저장하는 컴퓨터
+    - 클라이언트가 접근할 때 서버에서 클라이언트 컴퓨터로 웹 페이지 데이터를 응답해 사용자의 웹 브라우저에 표시
+    - 요청에 응답하는 주체
 
+### 시작하기  
+0. 가상환경 사용 - 모든 프로젝트는 가상환경(venv)을 만들어준 후 실행한다.
+    1. 생성 - python -m venv venv
+    2. 활성화 - source venv/Scripts/activate
+    3. 비활성화 - deactivate
+    - 가상환경 패키지 목록 저장; pip freeze > requirements.txt
+    - 파일로 부터 패키지 설치; pip install -r requirements.txt
+1. Django 설치하기 - pip install django==3.2.18
+2. 프로젝트 생성 - django-admin startproject (프로젝트명)
+3. 서버 실행 - python manage.py runserver
 
 
 ---
