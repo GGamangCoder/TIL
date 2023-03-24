@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Throw 화면{% endblock title %}
+
+
+{% block content %}
+    <form action="{% url 'articles:catch' %}" method="GET">
+        {% comment %} 여기서 for와 id 일치 시키기 {% endcomment %}
+        {% comment %} name 은 표시되는 변수(인자) {% endcomment %}
+        <label for="message">텍스트 입력</label>
+        <input type="text" id="message" name="message">
+    </form>
+{% endblock content %}
