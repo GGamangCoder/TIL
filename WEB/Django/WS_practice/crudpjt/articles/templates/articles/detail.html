@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Detail 화면 {% endblock title %}
+
+{% block content %}
+    <h3>{{ article.pk }} 번째 글</h3>
+    <p>글 번호: {{ article.id }} </p>
+    <p>글 제목: {{ article.title }} </p>
+    <p>글 내용: {{ article.content }} </p>
+    <p>생성 날짜: {{ article.created_at }} </p>
+    <p>수정 날짜: {{ article.updated_at }} </p>
+{% endblock content %}
