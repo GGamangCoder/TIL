@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\SSAFY\Desktop\김민재\Python\WEB\Django\TIL_Django\crudpjt\venv"
+VIRTUAL_ENV="C:\Users\zxskm\Desktop\김민재\Github\TIL\WEB\Django\WS_practice\crudpjt\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

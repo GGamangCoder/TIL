@@ -9,4 +9,11 @@
     <p>글 내용: {{ article.content }} </p>
     <p>생성 날짜: {{ article.created_at }} </p>
     <p>수정 날짜: {{ article.updated_at }} </p>
+    <hr>
+
+    <a href="{% url 'articles:edit' article.pk %}">수정하기</a>
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="삭제">
+    </form>
 {% endblock content %}

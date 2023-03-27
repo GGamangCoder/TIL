@@ -3,11 +3,12 @@
 {% block title %}NEW 화면{% endblock title %}
 
 {% block content %}
-    <form action="{% url 'articles:create' %}" method="GET">
+    <form action="{% url 'articles:create' %}" method="POST">
+        {% csrf_token %}
         <label for="title">제목: </label>
         <input type="text" name="title"><br>
         <label for="content">내용: </label>
-        <input type="text" name="title"><br>
+        <input type="text" name="content"><br>
 
         <input type="submit">
     </form>

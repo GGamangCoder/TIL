@@ -1,4 +1,4 @@
-#!C:\Users\SSAFY\Desktop\김민재\Python\WEB\Django\TIL_Django\crudpjt\venv\Scripts\python.exe
+#!C:\Users\zxskm\Desktop\김민재\Github\TIL\WEB\Django\WS_practice\crudpjt\venv\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\SSAFY\Desktop\김민재\Python\WEB\Django\TIL_Django\crudpjt\venv
+set VIRTUAL_ENV=C:\Users\zxskm\Desktop\김민재\Github\TIL\WEB\Django\WS_practice\crudpjt\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
