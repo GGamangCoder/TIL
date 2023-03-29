@@ -12,7 +12,7 @@
 ### [Boyer_Moore_Vote](Boyer_Moore_Vote.md)
 ### [Union_Find](Union_Find.md)<br>
 
-### [Graph]('#')
+### [Graph](#)
 1. [Dijkstra(다익스트라)](Graph/Dijkstra.md)
 2. [Kruskal(크루스칼)](Graph/Kruskal.md)
 
