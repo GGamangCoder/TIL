@@ -1,4 +1,4 @@
-## Boyer-Moore 과반수 투표 알고리즘(Majority Vote Algorithm)
+# Boyer-Moore 과반수 투표 알고리즘(Majority Vote Algorithm)
 > 스트리밍 알고리즘(straming algorithm)
 
 [참고 문서](https://sgc109.github.io/2020/11/30/boyer-moore-majority-vote-algorithm/)
