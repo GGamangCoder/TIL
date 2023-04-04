@@ -30,3 +30,8 @@
 - MST - Dijkstra
 - binary 에다가 + two pointer
 - bit operations / hashing
+
+
++ 프림 알고리즘(& 다익스트라)
++ LIS
++ approximate
