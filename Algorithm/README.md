@@ -16,11 +16,11 @@
 ### * [Union_Find](Union_Find.md)<br>
 
 ### * [Graph](./Graph/)
-0. [Tree(트리)](Graph/Tree.md)
-  - MST
-  - LIS
-1. [Kruskal(크루스칼)](Graph/Kruskal.md)
+1. [MST 개념](Graph/MST.md)
+  - [Kruskal(크루스칼)](Graph/Kruskal.md)
+  - [Prim(프림)](Graph/Prim.md)
 2. [Dijkstra(다익스트라)](Graph/Dijkstra.md)
+
 
 <br>
 
