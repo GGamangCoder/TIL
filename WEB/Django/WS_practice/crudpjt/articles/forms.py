@@ -1,7 +1,9 @@
 from django import forms
-
+from .models import Article
 
 # Create your forms here.
-class ArticleForm(forms.Form):
-    title = forms.CharField(max_length=16)
-    content = forms.CharField()
+class ArticleForm(forms.ModelForm):
+
+    class Meta:
+        model = Article
+        fields = '__all__'
