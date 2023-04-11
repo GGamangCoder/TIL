@@ -16,9 +16,6 @@ def detail(request, pk):
     }
     return render(request, 'articles/detail.html', context)
 
-# new 와 create 는 같은 기능이므로 합쳐준다.
-# def new(request):
-#     return render(request, 'articles/new.html')
 
 def create(request):
     if request.method == 'POST':
@@ -38,13 +35,6 @@ def delete(request, pk):
     article.delete()
     return redirect('articles:index')
 
-# edit 와 update 도 마찬가지
-# def edit(request, pk):
-#     article = Article.objects.get(pk=pk)
-#     context = {
-#         'article': article,
-#     }
-#     return render(request, 'articles/edit.html', context)
 
 def update(request, pk):
     article = Article.objects.get(pk=pk)
