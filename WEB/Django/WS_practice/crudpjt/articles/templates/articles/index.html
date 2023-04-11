@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Index 화면{% endblock title %}
 
 
 {% block content %}
+	<img src="{% static 'articles/django.png' %}" alt="django">
+	<img src="{% static 'django.jpg' %}" alt="django2">
 	{% if articles %}
 		{% for article in articles %}
 			<p>글 번호: {{ article.id }} </p>
@@ -16,14 +19,4 @@
 		아무것도 업서용...
 	{% endif %}
 {% endblock content %}
-
-
-
-
-
-
-
-
-
-
 
