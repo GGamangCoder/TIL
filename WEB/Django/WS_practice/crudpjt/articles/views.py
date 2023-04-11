@@ -16,17 +16,21 @@ def detail(request, pk):
     }
     return render(request, 'articles/detail.html', context)
 
-def new(request):
-    return render(request, 'articles/new.html')
+# new 와 create 는 같은 기능이므로 합쳐준다.
+# def new(request):
+#     return render(request, 'articles/new.html')
 
 def create(request):
-    title = request.POST.get('title')
-    content = request.POST.get('content')
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        content = request.POST.get('content')
 
-    article = Article(title=title, content=content)
-    article.save()
+        article = Article(title=title, content=content)
+        article.save()
 
-    return redirect('articles:detail', article.pk)
+        return redirect('articles:detail', article.pk)
+    else:
+        return render(request, 'articles/create.html')
 
 
 def delete(request, pk):

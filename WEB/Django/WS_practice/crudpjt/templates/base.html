@@ -13,8 +13,7 @@
   <a href="{% url 'articles:index' %}">홈으로 돌아가기</a>
   <hr>
 
-  {% comment %} <img src="" alt=""> {% endcomment %}
-  <div><a href="{% url 'articles:new' %}">새 글 작성</a></div><br>
+  <div><a href="{% url 'articles:create' %}">새 글 작성</a></div><br>
 
   {% block content %}{% endblock content %}
 
