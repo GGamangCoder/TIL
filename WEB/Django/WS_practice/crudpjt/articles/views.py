@@ -32,8 +32,11 @@ def create(request):
 
 def delete(request, pk):
     article = Article.objects.get(pk=pk)
-    article.delete()
-    return redirect('articles:index')
+    if request.method == 'POST':
+        article.delete()
+        return redirect('articles:index')
+    else:
+        return redirect('articles:detail', article.pk)
 
 
 def update(request, pk):
