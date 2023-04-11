@@ -17,7 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 
 
+# (pjt)/urls.py
+# media file 관리
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('articles/', include('articles.urls'))
-]
+] + static(settings.MEDIA_URL, documnet_root=settings.MEDIA_ROOT)
