@@ -3,7 +3,7 @@
 {% block title %}Update 화면{% endblock title %}
 
 {% block content %}
-    <form action="{% url 'articles:update' article.pk %}" method="POST">
+    <form action="{% url 'articles:update' article.pk %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {% comment %} <label for="title">제목: </label>
         <input type="text" name="title" value="{{ article.title }}"><br>
