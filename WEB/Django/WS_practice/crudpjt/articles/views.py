@@ -38,18 +38,21 @@ def delete(request, pk):
     article.delete()
     return redirect('articles:index')
 
-
-def edit(request, pk):
-    article = Article.objects.get(pk=pk)
-    context = {
-        'article': article,
-    }
-    return render(request, 'articles/edit.html', context)
+# edit 와 update 도 마찬가지
+# def edit(request, pk):
+#     article = Article.objects.get(pk=pk)
+#     context = {
+#         'article': article,
+#     }
+#     return render(request, 'articles/edit.html', context)
 
 def update(request, pk):
     article = Article.objects.get(pk=pk)
-    article.title = request.POST.get('title')
-    article.content = request.POST.get('content')
-    article.save()
-
-    return redirect('articles:detail', article.pk)
+    if request.method == 'POST':
+        article.title = request.POST.get('title')
+        article.content = request.POST.get('content')
+        article.save()
+        return redirect('articles:detail', article.pk)
+    else:
+        context = { 'article': article }
+        return render(request, 'articles/update.html', context)

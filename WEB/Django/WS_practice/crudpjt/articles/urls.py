@@ -11,7 +11,7 @@ urlpatterns = [
 
     path('<int:pk>/delete/', views.delete, name='delete'),
 
-    path('<int:pk>/edit/', views.edit, name='edit'),
+    # path('<int:pk>/edit/', views.edit, name='edit'),
     path('<int:pk>/update/', views.update, name='update'),
 
 ]
