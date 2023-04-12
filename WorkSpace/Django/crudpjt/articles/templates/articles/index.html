@@ -5,8 +5,8 @@
 
 
 {% block content %}
-	<img src="{% static 'articles/django.png' %}" alt="django">
-	<img src="{% static 'django.jpg' %}" alt="django2">
+	<div><a href="{% url 'articles:create' %}">새 글 작성</a></div><br>
+
 	{% if articles %}
 		{% for article in articles %}
 			<p>글 번호: {{ article.id }} </p>
