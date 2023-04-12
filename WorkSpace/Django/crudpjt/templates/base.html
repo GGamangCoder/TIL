@@ -12,7 +12,15 @@
 <body>
   <div class="container">
     <img src="{% static 'django.png' %}" alt="django"><br><br>
-    <a href="{% url 'accounts:login' %}">Login</a>
+    <b>
+      <a href="{% url 'accounts:login' %}">Login</a>
+      <form action="{% url 'accounts:logout' %}">
+        {% csrf_token %}
+        <input type="submit" value="Logout">
+      </form>
+    </b><br>
+
+    <h3>Hello, {{ user }} !</h3>
 
     <h1>{% block title %}{% endblock title %}</h1>
   
