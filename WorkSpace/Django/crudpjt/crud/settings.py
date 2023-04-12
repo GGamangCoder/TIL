@@ -102,6 +102,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# 인증과 권한 이해하기 - 추가
+AUTH_USER_MODEL = 'accounts.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
