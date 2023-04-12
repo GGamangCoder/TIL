@@ -13,12 +13,15 @@
   <div class="container">
     <img src="{% static 'django.png' %}" alt="django"><br><br>
     <b>
-      <a href="{% url 'accounts:login' %}">Login</a>
+      <a href="{% url 'accounts:login' %}">로그인</a>
       <form action="{% url 'accounts:logout' %}">
         {% csrf_token %}
-        <input type="submit" value="Logout">
+        <input type="submit" value="로그아웃">
       </form>
-    </b><br>
+      <a href="{% url 'accounts:signup' %}">회원가입</a>
+
+    </b><br><br>
+
 
     <h3>Hello, {{ user }} !</h3>
 
