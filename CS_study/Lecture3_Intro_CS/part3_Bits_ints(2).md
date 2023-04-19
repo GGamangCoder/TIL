@@ -38,7 +38,9 @@ ex) 1010 >> 1101 >> 1110
     - 이하 동문(same as above, S/A)
 
 
-* in JAVA >>> means logical shift
+* in JAVA
+    - >>> means logical shift
+    - >> means arithmetics shift
 
 --- 
-49분대 강의
+
